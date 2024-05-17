@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        /*main blue #232776*/
+body{
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: auto;
+}
+
+.navBar {
+    background-color: #ffffff;
+    height: 85px;
+    position: sticky;
+    top: 0%;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    z-index: 1;
+}
+
+.logoSQ {
+    position: absolute;
+    top: 0%;
+}
+
+.logoSQ img {
+    width: 400px;
+    height: auto;
+    margin-inline: 100px;
+    z-index: 1;
+}
+
+
+.footerSec{
+    border-width: 1px ;
+    border-style: solid ;
+    border-color: #2C2C8D;
+    height: auto;
+    align-content: center;
+    background-color: #2C2C8D;
+    text-align: center;
+    bottom: 0;
+}
+.lciFooter{
+    
+    color: #fff;
+    width: auto;
+    height: auto;
+
+}
+
+.hfSQ{
+    width: auto;
+    height: 10vh;
+    margin: 0%;
+}
+.titleSec{
+    margin: 3.6vh;
+}
+.titleHead{
+    text-align: center;
+    margin-inline: 1vw;
+    margin-top:-6vh ;
+    margin-bottom: -5vh;
+    width: auto;
+    padding: 4px 0px;
+    color: #2C2C8D;
+    font-size: xx-large;
+    text-shadow: 0px 4px 3px rgba(116, 115, 115, 0.4),
+             0px 8px 13px rgba(102, 100, 100, 0.1),
+             0px 18px 23px rgba(69, 68, 69, 0.1); 
+    
+}
+
+.socialSec{
+    width: auto;
+    height: auto;
+    overflow: scroll;
+    margin-top: 5vh;
+    margin-inline: 100px;
+}
+.div02 {
+    border-radius: 10px;
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    overflow: scroll;
+    padding: 30px;
+    margin: 10px;
+    margin-top: 100px;
+    margin-inline: 100px; /*make space in both sides*/
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.cyanSQ{
+    width: 50vw;
+    height: 40vh;
+    margin: 30px 20px;
+}
+.lotA{
+    width: 400px;
+    height: 100px;
+}
+.lotB{
+    width: 200px;
+    height: 100px;
+}
+.lotC{
+    width: 200px;
+    height: 100px;
+}
+.navyBlueSQ{
+    width: auto;
+    height: auto;
+}
+.navyBlueSQ img{
+    width: auto;
+    height: 50vh;
+    padding: 20px;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.fullSQ{
+    width: auto;
+    height: 10vh;
+    margin: 10px;
+    margin-inline: 10vw;
+}
+
+.tabs {
+           
+    width: 100%; 
+    text-align: left; 
+}
+        
+.tablink {
+    background-color: #afb7e6; 
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px; 
+    font-size: 17px;
+    font-weight: 600;
+    align-self: center;
+    transition: background-color 0.3s ease;
+    margin: 3px;        
+}
+        
+.tablink:hover {
+    background-color: #a8b4f9; 
+}
+        
+.tabcontent {
+    color: #333; 
+    display: none;
+    padding: 20px;
+    width: inherit;
+    float: left;
+}
+.tabcontent h1{
+    font-size: xx-large;
+    color: #232776;
+}
+.tabcontent p{
+    font-size: medium;
+    color: #333;
+}
+.mapSec{
+    width: auto;
+    height: auto;
+}
+.address{
+    width: auto;
+    height: auto;
+    margin: 10px;
+    font-weight: 600;
+}
+.address p{
+    color: #232776;
+    padding: 0px;
+}
+.map{
+    border-radius: 40%;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    background-color: #fff;
+}
+.map img{
+    width: 50px;
+    height: auto;
+    padding: 8px;
+}
+
+.icon{
+    margin: 10px;
+    display: inline-block;
+}
+.icon:hover{
+    animation: rotateYAxis 2s;
+}
+.icon img{
+           
+    width: 50px;
+    height: auto;
+           
+}
+
+.partnership{
+    background-color: #515c98;
+    margin-top: 100px;
+    margin-bottom: 15vh;
+    padding: 10px;
+}
+.partnership h2{
+    margin-inline: 100px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: xx-large;
+}
+.partnership p{
+    margin-inline: 100px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.div03 {
+    border-radius: 10px;
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    overflow: scroll;
+    padding: 30px;
+    margin: 10px;
+    margin-bottom: 10vh;
+    margin-inline: 100px; /*make space in both sides*/
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.delSQ{
+    width: 40vw;
+}
+.delSQ h2{
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    color: #2C2C8D;
+    font-size: xx-large;
+}
+.div04 {
+    border-radius: 10px;
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    overflow: scroll;
+    padding: 30px;
+    margin-bottom: 10vh;
+    margin-inline: 100px; /*make space in both sides*/
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.addressSQ{
+    width: 40vw;
+}
+.addressSQ h2{
+    color: #2C2C8D;
+    font-size: xx-large;
+}
+.addressSQ p{
+    font-weight: bold;
+    color: #000000c9;
+}
+.mapSec{
+    width: auto;
+    height: auto;
+}
+.box img{
+    border-width: 10px ;
+    border-style: solid ;
+    border-color: rgba(255, 255, 255, 0.647);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-inline: 6vw;
+    margin-bottom: 12vh;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+@keyframes rotateYAxis {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+
+@media screen and (max-width: 720px) {
+    
+    
+    .row{
+        margin-inline: 6px;
+    }
+    
+    .box{
+        margin-inline: 6px;
+        
+    }
+
+    .logoSQ img {
+        width: 0px;
+        height: auto;
+        margin-inline: 10px;
+    }
+
+    .div02 {
+        margin-inline: 6px;
+        margin-top: 10px;
+    }
+    .div02 img {
+        width: 200px;
+        height: auto;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+    .div03 {
+        margin-inline: 0;
+        width: auto;
+        margin-top: 10px;
+        margin-bottom: 100px;
+    }
+    .delSQ h2, .delSQ p{
+        margin-inline: 0;
+    }
+    .div03 img {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    }
+
+    .div04 {
+        margin-inline: 0;
+        width: auto;
+        overflow: scroll;
+    }
+    
+    .cyanSQ{
+        margin-inline: 0px;
+        width: auto;
+    }
+    
+    .navyBlueSQ{
+        margin-inline: 6px;
+    }
+    
+    .fullSQ{
+        margin-inline: 6px;
+    }
+    .socialSec{
+        margin-inline: 6px;
+    }
+    .logoSQ img {
+    width: 400px;
+    height: auto;
+    margin: auto;
+    }
+    .partnership{
+       margin-inline: 6px;
+       margin: 0%;
+       margin-bottom: 5vh;
+    }
+    .partnership h2 ,.partnership p{
+        margin-inline: 6px;
+    }
+  }
+
+.bodyBG {
+        background-image: url(imgs/Background.png);
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+}
+
+#trail {
+        position: absolute;
+        z-index: -2;
+        pointer-events: none;
+        animation: glow 2.4s infinite alternate;
+}
+@keyframes glow {
+        0% {
+        box-shadow: 0 0 50px 50px rgba(80, 91, 243, 0.792);
+        }
+        100% {
+            box-shadow: 0 0 100px 400px rgba(32, 32, 255, 0.477);
+        }
+    }
+    @media only screen and (max-width: 768px) {
+    #trail {
+            top: 0;
+    }
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+    </style>
+</head>
+<body>
+    <div class="bodyBG"></div>
+    <div id="trail"></div>
+
+    <div class="navBar">
+        <div class="logoSQ"><img src="imgs/lcilogo.jpg" alt="Logo"></div>
+    </div>
+    
+    <div class="div02">
+        <div class="row">
+            <!--<div class="titleSec">
+                <div class="titleHead"><h1>BUILDING A LEADING CORRUGATED CARDBOARD PACKAGING ENTERPRISE</h1></div>
+            </div> --> 
+            <div class="col"><div class="navyBlueSQ"><img src="imgs/FourBoxes.png" alt=""></div></div>
+            <div class="col"><div class="cyanSQ">
+                <div class="tabs">
+                    <button class="tablink" onclick="openPage('Product1', this, '#232776')" id="defaultOpen">Welcome to LCI</button>
+                    <button class="tablink" onclick="openPage('Product2', this, '#232776')"> Our Service</button>
+                    <button class="tablink" onclick="openPage('Product3', this, '#232776')">Our Sustainability</button>
+                </div>
+                    <div class="containerS">
+                        <div id="Product1" class="tabcontent">
+                            <h1>BUILDING A LEADING CORRUGATED CARDBOARD PACKAGING ENTERPRISE</h1>
+                            <p>We’re more than a supplier: we’re a partner that provides a competitive advantage, a
+                                partner that can deliver consistent quality and superior service, a partner that fuels
+                                innovation to foster real, sustainable growth.</p>
+                        </div>
+                        <div id="Product2" class="tabcontent">
+                            <h1>CORRUGATED PACKAGING SOLUTIONS</h1>
+                            <p>We offer a comprehensive range of converting capabilities and top-notch corrugated materials meticulously designed to safeguard,
+                                 promote, deliver, and display your products with excellence. Whether you require a distinctive shape, a specially 
+                                 reinforced structure, a shelf-ready solution, a simple one-color box, or a dynamic display,
+                                 our adept team is dedicated to crafting and delivering solutions that hold significance for your unique needs.</p>
+                        </div>
+                        <div id="Product3" class="tabcontent">
+                            <h1>IMAGINING DELIVERING ON THE PROMISE OF A SUSTAINABLE FUTURE</h1>
+                            <p>We are Connecting People to Products, safely and sustainably. We imagine a world where
+                                fiber-based packaging plays a central role in advancing a more circular economy.
+                                Building on a 30-year legacy in sustainable packaging, nature-based packaging at its core,
+                                we promise to continue to refine our approach by assessing and addressing three major
+                                areas where we can make a difference.</p>
+                        </div>
+                    </div> 
+                         
+            </div></div>
+            
+        </div>
+    </div>
+    <!--socialSec 
+    <div class="socialSec">
+        <div class="row">
+            <div class="mapSec">
+                <div class="row">
+                    <div class="col"><div class="address"><p>NO 350, <br>Daham Seth Mawatha, Arakagoda, Paragasthota</p></div></div>
+                    <div class="col"><div class="map"><img src="imgs/map(1).png" alt="" srcset=""></div></div> 
+                </div> 
+            </div>
+            <div class="fullSQ">
+                <div class="icon"><img src="imgs/facebook.png" alt="" srcset=""></div>
+                <div class="icon"><img src="imgs/linkedin(1).png" alt="" srcset=""></div>
+                <div class="icon"><img src="imgs/whatsapp.png" alt="" srcset=""></div>
+            </div>
+        </div>
+    </div>--> 
+    <div class="partnership">
+        <h2>TO PARTNERS, TO CUSTOMERS AND TO EACH OTHER</h2>
+        <p>Creating intricately designed packages and displays takes wide-ranging expertise, carefully
+            cultivated insight and a relentless focus on innovation. How we connect these fundamental
+            concepts together is what makes us unique: we foster connections through partnerships
+            that create winning solutions for our customers.</p>
+    </div>
+
+    <div class="div03">
+        <div class="row">
+            <div class="col"><div class="delSQ">
+                <h2>DELIVERING SUCCESS</h2>
+                <p>LCI's corrugated packaging stands as a premier choice in Sri Lanka, 
+                    providing comprehensive manufacturing capabilities and top-notch materials. 
+                    From distinctive shapes to reinforced structures, shelf-ready solutions, or 
+                    vibrant displays, our skilled team crafts solutions that resonate. 
+                    Explore our range to discover packaging that goes beyond expectations.</p>
+            </div>
+            </div>
+            <div class="col"><div class="navyBlueSQ"><img src="imgs/business.jpg" alt=""></div></div>
+        </div>
+            
+    </div>
+
+    <div class="partnership">
+        <h2>Connect with the Corrugated Container Professionals</h2>
+        <p>Your packaging challenges and needs evolve like your customer base. LCI understands both.
+            Contact our professionals to customize a corrugated container solution for your enterprise.</p>
+    </div>  
+
+            <div class="row">
+                <div class="col"><div class="box"><img src="imgs/facebook.png" alt="" srcset=""></div></div>
+                <div class="col"><div class="box"><img src="imgs/whatsapp.png" alt="" srcset=""></div></div>
+                <div class="col"><div class="box"><img src="imgs/linkedin(1).png" alt="" srcset=""></div></div>
+                <div class="col"><div class="box"><img src="imgs/google-plus.png" alt="" srcset=""></div></div>
+            </div>
+    
+
+    <div class="div04">
+        <div class="row">
+            <div class="col"><div class="addressSQ">
+                <h2>Connect with Us</h2>
+                <p>NO 350, <br>Daham Seth Mawatha, Arakagoda, Paragasthota</p>
+                <p>+94 714324859</p>
+            </div>
+            </div>
+            <div class="col"><div class="mapSec"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15851.031818455129!2d80.0091147!3d6.6768815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24b13542954a9%3A0xf8ed5e4ae2a201e0!2sLanka%20Corrugated%20Industreies%20(pvt)ltd%20Factory%202!5e0!3m2!1sen!2slk!4v1710233265178!5m2!1sen!2slk" width="400" height="200" style="border-radius: 10px;border: 5px; border-radius: 5px; border-color: #f7f7ff; border-style: solid; box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div>
+        </div>
+    </div>
+
+    <div class="footerSec">
+        <div class="lciFooter"><p>&copy; 2024 LCI - Lanka Corrugated Industries</p></div>
+    </div>
+
+    <script>
+        
+        function openPage(pageName, elmnt, color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+
+
+        document.addEventListener('mousemove', function (e) {
+        const trail = document.getElementById('trail');
+        const mouseX = e.pageX;
+        const mouseY = e.pageY;
+      
+        trail.style.left = mouseX + 'px';
+        trail.style.top = mouseY + 'px';
+        });
+
+        </script>
+        
+</body>
+</html>
